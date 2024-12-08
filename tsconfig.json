@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6", // ES6 pour les fonctionnalités modernes
+    "lib": ["dom", "dom.iterable", "esnext"], // Support DOM et ESNext
+    "allowJs": true, // Permet les fichiers JS si nécessaire
+    "skipLibCheck": true, // Ignorer les vérifications des types dans les libs
+    "esModuleInterop": true, // Pour les modules ES
+    "allowSyntheticDefaultImports": true, // Import par défaut pour des libs comme MUI
+    "strict": true, // Activer les règles strictes
+    "forceConsistentCasingInFileNames": true, // Casse cohérente dans les imports
+    "noFallthroughCasesInSwitch": true, // Empêcher les cas oubliés dans les switch
+    "module": "esnext", // Module ESNext pour la compatibilité moderne
+    "moduleResolution": "node", // Résolution via Node.js
+    "resolveJsonModule": true, // Importer les fichiers JSON
+    "isolatedModules": true, // Nécessaire pour React avec TypeScript
+    "noEmit": true, // Pas de génération de fichiers
+    "jsx": "react-jsx" // Utilise React 17+ JSX
+  },
+  "include": ["src/**/*"] // Inclure uniquement le dossier src
+}
