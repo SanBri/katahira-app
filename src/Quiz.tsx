@@ -73,7 +73,7 @@ const Quiz = () => {
   const checkAnswer = (value: string) => {
     if (currentKatahiri) {
       setInputValue("");
-      if (value === currentKatahiri?.romaji) {
+      if (value.toLocaleLowerCase() === currentKatahiri?.romaji) {
         answeredKatahiri.push({ katahiri: currentKatahiri, status: "success" });
         getRandomData();
       } else {
